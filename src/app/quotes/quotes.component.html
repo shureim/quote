@@ -1,4 +1,4 @@
-<!-- <div class="container">
+<div class="container">
   <h1>Quotes</h1>
 
 
@@ -6,13 +6,13 @@
 
     <p> {{quote.author|titlecase}}- "{{quote.quote}}"</p>
       <button  type="button" (click)="toggleDetails(i)">View</button>
-    <button type="button" (click)= "upVote(i)">Like</button>
-    <button type="button"  (click)= "downVote(i)">Dislike</button>
+    <!-- <button type="button" (click)= "upVote(i)">Like</button>
+    <button type="button"  (click)= "downVote(i)">Dislike</button> -->
     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'quoteComplete($event,i)'></app-quote-details>
   </div>
-  <br>
+  <!-- <br>
   <br>
 
-<app-quotes-form (addQuote)="addNewQuotes($event)"></app-quotes-form>
+<app-quotes-form (addQuote)="addNewQuotes($event)"></app-quotes-form> -->
 
-</div> -->
+</div>

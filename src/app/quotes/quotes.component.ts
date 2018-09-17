@@ -25,19 +25,19 @@ export class QuotesComponent implements OnInit {
     quote.id = quoteLength + 1;
     this.quoted.push(quote);
   }
-  // quoteComplete(isComplete, index) {
-  //   if (isComplete) {
-  //     this.quoted.splice(index, 1);
-  //   }
-  // }
-  //
-  // upVote(index) {
-  //   this.quoted[index].upvotes += 1;
-  // }
-  //
-  // downVote(index) {
-  //     this.quoted[index].downvotes += 1
-  //   }
+  quoteComplete(isComplete, index) {
+    if (isComplete) {
+      this.quoted.splice(index, 1);
+    }
+  }
+
+  upVote(index) {
+    this.quoted[index].upvotes += 1;
+  }
+
+  downVote(index) {
+      this.quoted[index].downvotes += 1
+    }
 
   constructor() { }
 
