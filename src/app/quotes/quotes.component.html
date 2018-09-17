@@ -1,0 +1,18 @@
+<div class="container" text-align="center">
+  <h1>Quotes</h1>
+
+
+  <div *ngFor='let quote of quoted;let i = index'>
+
+    <p> {{quote.author|titlecase}}- "{{quote.quote}}"</p>
+      <button class="btn btn-sm" type="button" (click)="toggleDetails(i)">View</button>
+    <button type="button" class="btn btn-sm btn-primary" (click)= "upVote(i)">up</button>
+    <button type="button" class="btn btn-sm btn-primary" (click)= "downVote(i)">down</button>
+    <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'quoteComplete($event,i)'></app-quote-details>
+  </div>
+  <br>
+  <br>
+
+<app-quotes-form (addQuote)="addNewQuotes($event)"></app-quotes-form>
+
+</div>
