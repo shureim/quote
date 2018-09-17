@@ -17,9 +17,9 @@ export class QuotesComponent implements OnInit {
     new Quote(6,  'Neil Gaiman', 'Google can bring you back 100,000 answers. A librarian can bring you back the right one.',  'Abdifatah', 0, 0, 0),
   ];
 
-  // toggleDetails(index) {
-  //   this.quoted[index].showDescription = !this.quoted[index].showDescription;
-  // }
+  toggleDetails(index) {
+    this.quoted[index].showDescription = !this.quoted[index].showDescription;
+  }
   // addNewQuotes(quote) {
   //   const quoteLength = this.quoted.length;
   //   quote.id = quoteLength + 1;
