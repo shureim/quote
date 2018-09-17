@@ -11,14 +11,14 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() quote: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  // delete(complete: boolean) {
-  //   this.isComplete.emit(complete);
-  // }
-  //
-  //
-  // constructor() { }
-  //
-  // ngOnInit() {
-  // }
+  delete(complete: boolean) {
+    this.isComplete.emit(complete);
+  }
+  
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
