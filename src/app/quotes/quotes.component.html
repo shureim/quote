@@ -7,7 +7,7 @@
     <p> {{quote.author|titlecase}}- "{{quote.quote}}"</p>
       <button  type="button" (click)="toggleDetails(i)">View</button>
     <button type="button" (click)= "upVote(i)">Like</button>
-    <!-- <button type="button"  (click)= "downVote(i)">Dislike</button> -->
+    <button type="button"  (click)= "downVote(i)">Dislike</button>
     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'quoteComplete($event,i)'></app-quote-details>
   </div>
   <!-- <br>
