@@ -6,17 +6,17 @@ import {Quote} from '../quote'
   templateUrl: './quotes-form.component.html',
   styleUrls: ['./quotes-form.component.css']
 })
-// export class QuotesFormComponent implements OnInit {
-//   newQuote = new Quote(0, '', '', '', 0, 0, 0);
-//   @Output() addQuote = new EventEmitter<Quote>();
-//
-//   submitQuotes() {
-//     this.addQuote.emit(this.newQuote);
-//   }
-//
-//   constructor() { }
-//
-//   ngOnInit() {
-//   }
-//
-// }
+export class QuotesFormComponent implements OnInit {
+  newQuote = new Quote(0, '', '', '', 0, 0, 0);
+  @Output() addQuote = new EventEmitter<Quote>();
+
+  submitQuotes() {
+    this.addQuote.emit(this.newQuote);
+  }
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
