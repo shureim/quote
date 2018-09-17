@@ -38,10 +38,10 @@ export class QuotesComponent implements OnInit {
   // downVote(index) {
   //     this.quoted[index].downvotes += 1
   //   }
-  //
-  // constructor() { }
-  //
-  // ngOnInit() {
-  // }
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
