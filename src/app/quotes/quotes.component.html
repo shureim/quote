@@ -10,9 +10,9 @@
     <button type="button"  (click)= "downVote(i)">Dislike</button>
     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'quoteComplete($event,i)'></app-quote-details>
   </div>
-  <!-- <br>
+  <br>
   <br>
 
-<app-quotes-form (addQuote)="addNewQuotes($event)"></app-quotes-form> -->
+<app-quotes-form (addQuote)="addNewQuotes($event)"></app-quotes-form>
 
 </div>
